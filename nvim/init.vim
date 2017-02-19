@@ -3,11 +3,14 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-jedi'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'morhetz/gruvbox'
+Plug 'pangloss/vim-javascript'
+Plug 'craigemery/vim-autotag'
 call plug#end()
 
 " All key mappings are in this file
@@ -41,6 +44,9 @@ set smartcase           " ...unless query has capital letters
 " More natural splits
 set splitbelow
 set splitright
+
+" Enable Omni Completion
+set omnifunc=syntaxcomplete#Complet
 
 let g:python_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
