@@ -24,9 +24,6 @@ call plug#end()
 " All key mappings are in this file
 source $HOME/.config/nvim/keymap.vim
 
-" Makes the cursor a pipe in insert-mode
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-
 " Access the system clipboard
 set clipboard=unnamed
 
