@@ -1,16 +1,24 @@
 " Add plugins
 call plug#begin()
-Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-unimpaired'
+Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'Shougo/deoplete.nvim'
-Plug 'zchee/deoplete-jedi'
+Plug 'davidhalter/jedi-vim'
+Plug 'google/yapf'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'morhetz/gruvbox'
 Plug 'pangloss/vim-javascript'
 Plug 'craigemery/vim-autotag'
+Plug 'dahu/vim-asciidoc'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'mileszs/ack.vim'
+Plug 'stevearc/vim-arduino'
+Plug 'Chiel92/vim-autoformat'
+Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
 " All key mappings are in this file
@@ -45,20 +53,33 @@ set smartcase           " ...unless query has capital letters
 set splitbelow
 set splitright
 
+let g:xml_syntax_folding=1
+autocmd FileType xml setlocal foldmethod=syntax
+
 " Enable Omni Completion
 set omnifunc=syntaxcomplete#Complet
 
-let g:python_host_prog = '/usr/local/bin/python'
+let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
 autocmd CompleteDone * pclose " To close preview window of deoplete automagically
 
-" yapf
-autocmd FileType python nnoremap <leader>y :0,$!yapf<cr>
-
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" The Silver Searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+let g:lightline = {
+        \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+        \ },
+        \ 'component_function': {
+        \   'gitbranch': 'fugitive#head'
+        \ },
+      \ }

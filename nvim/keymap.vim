@@ -1,22 +1,31 @@
 let mapleader=" "
 
 " Yank to end of line
-nmap Y y$
+nnoremap Y y$
 
 " Ctrl-S to save
-nmap <c-s> :update<cr>
-imap <c-s> <esc>:update<cr>
+nnoremap <c-s> :update<cr>
+inoremap <c-s> <esc>:update<cr>
 
 " NERDTree
-nmap <leader>ne :NERDTree<cr>
+nnoremap <leader>ne :NERDTree<cr>
 
-" CtrlP
-nnoremap <leader>f :CtrlP<cr>
-nnoremap <leader>b :CtrlPBuffer<cr>
-nnoremap <leader>o :CtrlPMRUFiles<cr>
+" FZF
+nnoremap <leader>f :FZF<cr>
+nnoremap <leader>b :FzfBuffer<cr>
 
 " Edit init.vim
-:nnoremap <leader>rc :vsplit $MYVIMRC<cr>
+nnoremap <leader>rc :vsplit $MYVIMRC<cr>
 
 " Edit custom key mapping
-:nnoremap <leader>km :vsplit $HOME/.config/nvim/keymap.vim<cr> 
+nnoremap <leader>km :vsplit $HOME/.config/nvim/keymap.vim<cr> 
+
+" Git status
+nnoremap <leader>gs :Gstatus<cr>
+
+" Auto format
+nnoremap <leader>af :Autoformat<cr>
+
+" yapf
+autocmd FileType python nnoremap <LocalLeader>= :0,$!yapf<CR>
+
