@@ -50,8 +50,12 @@ set smartcase           " ...unless query has capital letters
 set splitbelow
 set splitright
 
+" Enable folding for XML files
 let g:xml_syntax_folding=1
 autocmd FileType xml setlocal foldmethod=syntax
+
+" Turn on folding for python files
+autocmd FileType python setlocal foldmethod=indent
 
 " Enable Omni Completion
 set omnifunc=syntaxcomplete#Complet
