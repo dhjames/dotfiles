@@ -9,7 +9,6 @@ Plug 'davidhalter/jedi-vim'
 Plug 'google/yapf'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'morhetz/gruvbox'
 Plug 'pangloss/vim-javascript'
 Plug 'craigemery/vim-autotag'
 Plug 'dahu/vim-asciidoc'
@@ -20,6 +19,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'trevordmiller/nova-vim'
 call plug#end()
 
 " All key mappings are in this file
@@ -30,8 +30,8 @@ set clipboard=unnamed
 
 " Set colors
 set termguicolors
-colorscheme gruvbox
 set background=dark
+colorscheme nova
 
 " Tab settings
 set expandtab           " Insert spaces for tab
