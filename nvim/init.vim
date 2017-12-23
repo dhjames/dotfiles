@@ -39,13 +39,15 @@ set tabstop=4           " Tabs are 4 spaces
 set shiftwidth=4        " Indendation for < and > commands
 
 " Display settings
-set number              " Show line numbers
+set relativenumber      " Show (relative) line numbers
+set number              " Show current line number
 set showcmd             " Show partial commands in status line
 set nowrap              " Don't wrap lines
 
 " Better search
 set ignorecase          " Search is case insensitive
 set smartcase           " ...unless query has capital letters
+set nohlsearch
 
 " More natural splits
 set splitbelow
