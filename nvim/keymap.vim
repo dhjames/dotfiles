@@ -20,7 +20,10 @@ nnoremap <leader>rc :vsplit $MYVIMRC<cr>
 " Edit custom key mapping
 nnoremap <leader>km :vsplit $HOME/.config/nvim/keymap.vim<cr> 
 
-" Git status
+" Source current file
+nnoremap <leader>so :source %<CR>
+
+" Git shortcuts
 nnoremap <leader>gs :Gstatus<cr>
 
 " Auto format
