@@ -1,25 +1,30 @@
 " Add plugins
 call plug#begin()
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-unimpaired'
-Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
+Plug 'mileszs/ack.vim'
+Plug 'craigemery/vim-autotag'
+
+Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
+Plug 'terryma/vim-smooth-scroll'
+Plug 'trevordmiller/nova-vim'
+
+Plug 'w0rp/ale'
 Plug 'davidhalter/jedi-vim'
-Plug 'google/yapf'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'pangloss/vim-javascript'
-Plug 'craigemery/vim-autotag'
+
 Plug 'OmniSharp/omnisharp-vim'
-Plug 'mileszs/ack.vim'
 Plug 'stevearc/vim-arduino'
+Plug 'pangloss/vim-javascript'
+
 Plug 'Chiel92/vim-autoformat'
-Plug 'w0rp/ale'
-Plug 'maximbaz/lightline-ale'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'trevordmiller/nova-vim'
-Plug 'terryma/vim-smooth-scroll'
+Plug 'google/yapf'
+
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " All key mappings are in this file
