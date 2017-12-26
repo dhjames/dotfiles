@@ -49,6 +49,9 @@ set ignorecase          " Search is case insensitive
 set smartcase           " ...unless query has capital letters
 set nohlsearch
 
+" Live substitution
+set inccommand=nosplit
+
 " More natural splits
 set splitbelow
 set splitright
