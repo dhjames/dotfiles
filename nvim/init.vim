@@ -20,6 +20,7 @@ Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'trevordmiller/nova-vim'
+Plug 'terryma/vim-smooth-scroll'
 call plug#end()
 
 " All key mappings are in this file
@@ -78,6 +79,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " The Silver Searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+" Configure status line
 let g:lightline = {
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
@@ -87,3 +89,7 @@ let g:lightline = {
         \   'gitbranch': 'fugitive#head'
         \ },
       \ }
+
+" Smooth scrolling
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 40, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 40, 4)<CR>
