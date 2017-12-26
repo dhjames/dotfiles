@@ -25,6 +25,7 @@ nnoremap <leader>so :source %<CR>
 
 " Git shortcuts
 nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gd :Gdiff<cr>
 
 " Auto format
 nnoremap <leader>af :Autoformat<cr>
