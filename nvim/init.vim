@@ -66,13 +66,14 @@ let g:xml_syntax_folding=1
 autocmd FileType xml setlocal foldmethod=syntax
 
 " Turn on folding for python files
-autocmd FileType python setlocal foldmethod=indent
-
-" Enable Omni Completion
-set omnifunc=syntaxcomplete#Complet
+autocmd Syntax python setlocal foldmethod=indent
+autocmd Syntax python normal zR
 
 let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
+
+" Enable Omni Completion
+set omnifunc=syntaxcomplete#Complet
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
