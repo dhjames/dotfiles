@@ -13,9 +13,10 @@ inoremap <c-s> <esc>:update<cr>
 " NERDTree
 nnoremap <leader>ne :NERDTree<cr>
 
-" FZF
-nnoremap <leader>f :FZF<cr>
-nnoremap <leader>b :FzfBuffer<cr>
+" FZF shortcuts
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>g :GFiles<CR>
+nnoremap <leader>b :Buffers<CR>
 
 " Edit init.vim
 nnoremap <leader>rc :vsplit $MYVIMRC<cr>
