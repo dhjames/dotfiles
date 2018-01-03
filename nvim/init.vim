@@ -49,6 +49,7 @@ set relativenumber      " Show (relative) line numbers
 set number              " Show current line number
 set showcmd             " Show partial commands in status line
 set nowrap              " Don't wrap lines
+set cursorline          " Highlight current line
 
 " Better search
 set ignorecase          " Search is case insensitive
