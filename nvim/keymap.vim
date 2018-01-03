@@ -4,7 +4,7 @@ let mapleader=" "
 nnoremap Y y$
 
 " Fix common typo when quitting
-command Q q
+command! Q q
 
 " Ctrl-S to save
 nnoremap <c-s> :update<cr>
