@@ -70,8 +70,9 @@ autocmd FileType xml setlocal foldmethod=syntax
 autocmd Syntax python setlocal foldmethod=indent
 autocmd Syntax python normal zR
 
+" Python support
 let g:python_host_prog = '/usr/local/bin/python2'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python3_host_prog = '~/.pyenv/py3neovim/bin/python'
 
 " Enable Omni Completion
 set omnifunc=syntaxcomplete#Complet
