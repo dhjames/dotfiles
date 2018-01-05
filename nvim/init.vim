@@ -12,8 +12,9 @@ Plug 'maximbaz/lightline-ale'
 Plug 'terryma/vim-smooth-scroll'
 Plug 'trevordmiller/nova-vim'
 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 Plug 'w0rp/ale'
-Plug 'davidhalter/jedi-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
