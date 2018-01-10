@@ -24,6 +24,7 @@ Plug 'pangloss/vim-javascript'
 
 Plug 'Chiel92/vim-autoformat'
 Plug 'google/yapf'
+Plug 'JamshedVesuna/vim-markdown-preview'
 
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
@@ -105,3 +106,5 @@ let g:lightline = {
 " Smooth scrolling
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 40, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 40, 4)<CR>
+
+let vim_markdown_preview_github=1
