@@ -36,3 +36,13 @@ nnoremap <leader>af :Autoformat<cr>
 
 " yapf
 autocmd FileType python nnoremap <LocalLeader>= :0,$!yapf<CR>
+
+" Easily move between terminal windows
+tmap <C-W>h <C-\><C-N><C-W>h
+tmap <C-W><C-H> <C-\><C-N><C-W><C-H>
+tmap <C-W>j <C-\><C-N><C-W>j
+tmap <C-W><C-J> <C-\><C-N><C-W><C-J>
+tmap <C-W>k <C-\><C-N><C-W>k
+tmap <C-W><C-K> <C-\><C-N><C-W><C-K>
+tmap <C-W>l <C-\><C-N><C-W>l
+tmap <C-W><C-L> <C-\><C-N><C-W><C-L>
