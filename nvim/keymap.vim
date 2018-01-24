@@ -11,7 +11,7 @@ nnoremap <c-s> :update<cr>
 inoremap <c-s> <esc>:update<cr>
 
 " NERDTree
-nnoremap <leader>ne :NERDTree<cr>
+nnoremap <leader>ne :NERDTreeToggle<cr>
 
 " FZF shortcuts
 nnoremap <leader>f :Files<CR>
