@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'mileszs/ack.vim'
 Plug 'craigemery/vim-autotag'
+Plug 'janko-m/vim-test'
 
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
@@ -91,6 +92,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " The Silver Searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Text execution
+let test#strategy = "asyncrun"
 
 " Configure status line
 let g:lightline = {
