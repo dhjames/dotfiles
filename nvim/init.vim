@@ -26,6 +26,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'Chiel92/vim-autoformat'
 Plug 'google/yapf'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'chrisbra/csv.vim'
 
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
