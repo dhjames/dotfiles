@@ -83,7 +83,6 @@ autocmd Syntax python setlocal foldmethod=indent
 autocmd Syntax python normal zR
 
 " Python support
-let g:python_host_prog = $HOME . '/virtualenvs/py2neovim/bin/python'
 let g:python3_host_prog = $HOME . '/virtualenvs/py3neovim/bin/python'
 
 " Enable Omni Completion
@@ -108,10 +107,11 @@ let test#strategy = "asyncrun"
 let g:lightline = {
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+        \             [ 'gitbranch', 'readonly', 'filename', 'kitestatus', 'modified' ] ]
         \ },
         \ 'component_function': {
-        \   'gitbranch': 'fugitive#head'
+        \   'gitbranch': 'fugitive#head',
+        \   'kitestatus': 'kite#statusline'
         \ },
       \ }
 
