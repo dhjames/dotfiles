@@ -74,7 +74,12 @@ set inccommand=nosplit
 set splitbelow
 set splitright
 
-" Enable folding for XML files
+autocmd BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set shiftwidth=2
+    \ set softtabstop=-1    "uses shifwidth
+
+" Folding
 let g:xml_syntax_folding=1
 autocmd FileType xml setlocal foldmethod=syntax
 
