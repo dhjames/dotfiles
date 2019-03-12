@@ -82,15 +82,15 @@ autocmd BufNewFile,BufRead *.js, *.html, *.css
 " Folding
 let g:xml_syntax_folding=1
 autocmd FileType xml setlocal foldmethod=syntax
+autocmd FileType xml normal zR
 
-" Turn on folding for python files
 autocmd Syntax python setlocal foldmethod=indent
 autocmd Syntax python normal zR
 
 " Python support
 let g:python3_host_prog = $HOME . '/virtualenvs/py3neovim/bin/python'
 
-" Enable Omni Completion
+" OmniSharp
 set omnifunc=syntaxcomplete#Complet
 
 " deoplete
