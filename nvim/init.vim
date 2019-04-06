@@ -74,6 +74,15 @@ set inccommand=nosplit
 set splitbelow
 set splitright
 
+" Python setting for PEP8
+autocmd BufNewFile,BufRead *.py set
+    \ tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=4
+    \ textwidth=79
+    \ autoindent
+    \ fileformat=unix
+
 autocmd BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set shiftwidth=2
