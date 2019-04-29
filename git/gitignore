@@ -1,5 +1,10 @@
-# Mac Finder
-.DS_Store
+# python
+env
+__pycache__
+.env
 
 # ctags
 tags
+
+# Mac
+.DS_Store
